@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_items",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menu-items",
+    "displayName": "MenuItems",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
