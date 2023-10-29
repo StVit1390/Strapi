@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "work_ins",
+  "info": {
+    "singularName": "work-in",
+    "pluralName": "work-ins",
+    "displayName": "WorkIN",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quote": {
+      "type": "text"
+    },
+    "quote2": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::card.card"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

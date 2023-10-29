@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "second_banners",
+  "info": {
+    "singularName": "second-banner",
+    "pluralName": "second-banners",
+    "displayName": "SecondBanner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tittle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bank_accounts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bank-account.bank-account"
+    }
+  }
+}
