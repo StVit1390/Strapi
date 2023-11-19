@@ -4,15 +4,25 @@
   "info": {
     "singularName": "phone",
     "pluralName": "phones",
-    "displayName": "Phone"
+    "displayName": "Phone",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "phone": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

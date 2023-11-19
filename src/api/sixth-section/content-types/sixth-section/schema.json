@@ -1,10 +1,10 @@
 {
-  "kind": "collectionType",
-  "collectionName": "bank_accounts",
+  "kind": "singleType",
+  "collectionName": "sixth_sections",
   "info": {
-    "singularName": "bank-account",
-    "pluralName": "bank-accounts",
-    "displayName": "bankAccount",
+    "singularName": "sixth-section",
+    "pluralName": "sixth-sections",
+    "displayName": "Sixth-section",
     "description": ""
   },
   "options": {
@@ -24,13 +24,10 @@
         }
       }
     },
-    "address": {
-      "type": "biginteger",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+    "partners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::partner.partner"
     }
   }
 }

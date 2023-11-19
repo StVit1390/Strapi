@@ -1,10 +1,10 @@
 {
-  "kind": "collectionType",
-  "collectionName": "projects",
+  "kind": "singleType",
+  "collectionName": "fourth_sections",
   "info": {
-    "singularName": "project",
-    "pluralName": "projects",
-    "displayName": "Project",
+    "singularName": "fourth-section",
+    "pluralName": "fourth-sections",
+    "displayName": "Fourth-section",
     "description": ""
   },
   "options": {
@@ -16,13 +16,8 @@
     }
   },
   "attributes": {
-    "img": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ],
+    "tittle": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -37,23 +32,15 @@
         }
       }
     },
-    "goal": {
-      "type": "decimal",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "quote": {
-      "type": "text",
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "waterMark": {
+    "img": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -66,13 +53,50 @@
         }
       }
     },
-    "btn": {
+    "imgDescription": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
+      }
+    },
+    "subTittle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "subDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "subImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
